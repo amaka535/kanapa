@@ -1,0 +1,31 @@
+$(`<script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>`).appendTo('head');
+$(`<script src="https://zimek-lmao.github.io/better-alis/commands.js?nocache=${Date.now()}"></script>`).appendTo('head');
+setInterval(function() {
+$(document).ready(function(){
+  
+/*zimek*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/4S4rwn3.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/9k6xgeP.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/vybQrBq.png" },{"x":"0","y":"0","url": "https://i.imgur.com/Ssj2Qnu.png" }]});
+  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.b=248});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.g=155});
+ // Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.numSides=7});
+  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/GudyHjc.png"});
+  
+/*yellow*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.customImages=[{"x":"-2","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/yellow/topleft.png" },{"x":"0","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/yellow/topright.png" },{"x":"-2","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/yellow/bottomleft.png" },{"x":"0","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/yellow/bottomright.png" }]});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.g=240});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.b=89});
+/*yurain*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.customImages=[{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}]});
+  Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.r=111});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.g=0});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.b=142});
+
+/*sick*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.customImages=[{"x":"-2","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/char2/hat1.png" },{"x":"0","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/char2/hat2.png" },{"x":"-2","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/char2/hat3.png" },{"x":"0","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/char2/hat4.png" }]});
+/*eagle 15$*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="94133")player.customImages=[{"x":"-2","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat1.png" },{"x":"0","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat2.png" },{"x":"-2","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat3.png" },{"x":"0","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat4.png" }]});
+
+/*neroz*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="116426")player.hat="https://i.imgur.com/eCVRWJj.png"});
+/*killer*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.hat="http://gaver.io/hats/kaneki.png"});
+/*aqu hat disable*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.hat="Disabled"});
+/*aqu*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/lwv9PPG.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/tt0e4hm.png" }]});
+  
+  /* some poor random guy donate hat from neroz and yurain */
+Object.values(playerDetails).forEach(player=>{if(player.uid=="251989")player.hat="https:\/\/cdn.discordapp.com\/attachments\/283249356415696896\/464991723345674260\/nrz_hat.png"});
+  
+/*free hats*/
+  /*free aqu hat*/  Object.values(playerDetails).forEach(player=>{if(player.name=="Aquliax")player.hat="https:\/\/cdn.discordapp.com\/attachments\/283249356415696896\/464991723345674260\/nrz_hat.png"});
+  
+//skinUrl name numSides
+});
+}, 5000)
