@@ -18,7 +18,7 @@ $(document).ready(function(){
 /*neroz*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="116426")player.hat="https://i.imgur.com/eCVRWJj.png"});
 /*killer*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.hat="http://gaver.io/hats/kaneki.png"});
 /*aqu hat disable*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.hat="Disabled"});
-/*aqu*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/lwv9PPG.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/tt0e4hm.png" }]});
+/*aqu*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/RxV0AaM.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/Kiatxhz.png" }]});
   
   /* some poor random guy donate hat from neroz and yurain */
 Object.values(playerDetails).forEach(player=>{if(player.uid=="251989")player.hat="https:\/\/cdn.discordapp.com\/attachments\/283249356415696896\/464991723345674260\/nrz_hat.png"});
