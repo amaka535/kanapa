@@ -1,4 +1,4 @@
-$(`<script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>`).appendTo('head');
+$(`<script id="btaBanlist" src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>`).appendTo('head');
 $(`<script src="https://zimek-lmao.github.io/better-alis/commands.js?nocache=${Date.now()}"></script>`).appendTo('head');
 setInterval(function() {
 $(document).ready(function(){
