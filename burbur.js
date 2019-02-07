@@ -21,9 +21,11 @@ $(document).ready(function(){
 
   
 /*eagle 15$*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="94133")player.customImages=[{"x":"-2","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat1.png" },{"x":"0","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat2.png" },{"x":"-2","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat3.png" },{"x":"0","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat4.png" }]});
-
 /*neroz*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="116426")player.hat="https://i.imgur.com/eCVRWJj.png"});
+  
 /*killer*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.hat="http://gaver.io/hats/kaneki.png"});
+    Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.r=39});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.g=74});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.b=179});
+  
 /*aqu hat disable*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.hat="Disabled"});
 /*aqu*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/RxV0AaM.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/Kiatxhz.png" }]});
   
