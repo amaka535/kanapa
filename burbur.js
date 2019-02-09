@@ -26,6 +26,8 @@ $(document).ready(function(){
 /*killer*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.hat="http://gaver.io/hats/kaneki.png"});
     Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.r=39});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.g=74});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.b=179});
   
+  /*hannah*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="389192")player.hat="https://nosx.cf/dildo.png"});
+  
 /*aqu hat disable*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.hat="Disabled"});
 /*aqu*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/RxV0AaM.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/Kiatxhz.png" }]});
   
