@@ -2,7 +2,7 @@ $(`<script src="https://zimek-lmao.github.io/better-alis/commands.js?nocache=${D
 setInterval(function() {
 $(document).ready(function(){
   
-/*zimek*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/kKo863V.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/tU7XtBT.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/cBR2cul.png" },{"x":"0","y":"0","url": "https://i.imgur.com/rpTqWOx.png" }]});
+/*zimek*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/kKo863V.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/tU7XtBT.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/rpTqWOx.png" },{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }]});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.b=248});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.g=155});
  // Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.numSides=7});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/RrfkVLQ.png"});
