@@ -13,6 +13,9 @@ $(document).ready(function(){
 /*yurain*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.customImages=[{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}]});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.r=111});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.g=0});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.b=142});
 
+  /*no name*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.hat="http://alis.io/assets/img/crownhat.png"});
+  Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.r=18});Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.g=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.b=13});
+
 
 /*sick*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/IwluV30.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/CIv1ui0.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/UQf50hu.png" },{"x":"0","y":"0","url": "https://i.imgur.com/EHGuB6n.png" }]});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.r=170});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.b=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.g=248});
