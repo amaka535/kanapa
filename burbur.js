@@ -18,7 +18,8 @@ $(document).ready(function(){
 
 
 /*sick*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/IwluV30.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/CIv1ui0.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/UQf50hu.png" },{"x":"0","y":"0","url": "https://i.imgur.com/EHGuB6n.png" }]});
- // Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.skinUrl="https://i.imgur.com/YpgRgd7.png"});
+  Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.r=181});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.g=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.b=253});
+  // Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.skinUrl="https://i.imgur.com/YpgRgd7.png"});
 
   /*noskill*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="310697")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/5jYUav5.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/b6uYi62.png" }]});
 
