@@ -2,10 +2,10 @@ $(`<script src="https://zimek-lmao.github.io/better-alis/commands.js?nocache=${D
 setInterval(function() {
 $(document).ready(function(){
   
-/*zimek*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/kKo863V.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/tU7XtBT.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/rpTqWOx.png" },{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }]});
+/*zimek*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/]});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.b=248});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.g=155});
  // Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.numSides=7});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/RrfkVLQ.png"});
+  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/PxCyNam.png"});
   
 /*yellow*/ //Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/JVTCK5t.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/MViWvvE.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/TVD7Adl.png" },{"x":"0","y":"0","url": "https://i.imgur.com/ENUT99f.png" }]});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.g=240});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.b=89});
@@ -21,7 +21,7 @@ $(document).ready(function(){
   Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.r=181});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.g=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.b=253});
   // Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.skinUrl="https://i.imgur.com/YpgRgd7.png"});
 
-  /*noskill*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="310697")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/5jYUav5.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/b6uYi62.png" }]});
+  /*noskill*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="310697")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/5jYUav5.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/b6uYi62.png" }]});
 
   
 /*eagle 15$*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="94133")player.customImages=[{"x":"-2","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat1.png" },{"x":"0","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat2.png" },{"x":"-2","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat3.png" },{"x":"0","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat4.png" }]});
