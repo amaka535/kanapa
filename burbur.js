@@ -2,10 +2,10 @@ $(`<script src="https://zimek-lmao.github.io/better-alis/commands.js?nocache=${D
 setInterval(function() {
 $(document).ready(function(){
   
-/*zimek*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/]});
+/*zimek*/ //Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/]});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.b=248});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.g=155});
  // Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.numSides=7});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/PxCyNam.png"});
+  //Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/PxCyNam.png"});
   
 /*yellow*/ //Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/JVTCK5t.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/MViWvvE.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/TVD7Adl.png" },{"x":"0","y":"0","url": "https://i.imgur.com/ENUT99f.png" }]});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.g=240});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.b=89});
@@ -44,3 +44,30 @@ Object.values(playerDetails).forEach(player=>{if(player.uid=="251989")player.hat
 //skinUrl name numSides
 });
 }, 5000)
+
+//animated skin by zimek
+setInterval(function() {
+$(document).ready(function(){
+
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/1.png"});}, 70);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/2.png"});}, 140);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/3.png"});}, 210);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/4.png"});}, 280);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/5.png"});}, 350);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/6.png"});}, 420);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/7.png"});}, 490);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/8.png"});}, 560);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/9.png"});}, 630);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/10.png"});}, 700);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/11.png"});}, 770);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/12.png"});}, 840);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/13.png"});}, 910);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/14.png"});}, 980);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/15.png"});}, 1050);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/16.png"});}, 1120);
+setTimeout(function(){Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://zimek-lmao.github.io/zimek/aSKIN/17.png"});}, 1190);
+
+
+});
+}, 1200);
+
