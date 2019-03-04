@@ -6,8 +6,6 @@ $(document).ready(function(){
   Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.b=248});Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.g=155});
  // Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.numSides=7});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/PxCyNam.png"});
-    Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.isAdmin=69});
-    Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.isAdmin=7});
 
   
 /*yellow*/ //Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/JVTCK5t.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/MViWvvE.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/TVD7Adl.png" },{"x":"0","y":"0","url": "https://i.imgur.com/ENUT99f.png" }]});
