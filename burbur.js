@@ -30,7 +30,7 @@ $(document).ready(function(){
   
 /*killer*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.hat="http://gaver.io/hats/kaneki.png"});
     //Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.r=39});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.g=74});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.b=179});
-  /*badr*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="316234don")player.hat="https://i.imgur.com/KnJUiXJ.png"});
+  /*badr*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="316234")player.hat="https://i.imgur.com/KnJUiXJ.png"});
 
   /*hannah*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="389192")player.hat="https://nosx.cf/dildo.png"});
   
