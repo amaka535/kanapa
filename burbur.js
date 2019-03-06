@@ -12,8 +12,9 @@ $(document).ready(function(){
   Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.g=240});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.b=89});
 
 /*yurain*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.customImages=[{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}]});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.r=111});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.g=0});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.b=142});
-
+//  Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.r=111});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.g=0});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.b=142});
+Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.isAdmin="YuRain"});
+  
   /*no name*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.hat="http://alis.io/assets/img/crownhat.png"});
   Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.r=18});Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.g=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.b=13});
 
