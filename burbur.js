@@ -133,7 +133,7 @@ window.myuserid = userid;
         if (userid == 2056 || userid == 165218) {
 $("body").append(`<script src="https://kamiz324.github.io/ngha/ghai.js?nocache=${Date.now()}"></script>`);
         }
-}, 10000)
+}, 13000)
 
 
 // Animated skin by zimek
