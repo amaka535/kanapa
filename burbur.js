@@ -1,58 +1,135 @@
+// Link banlist and commands
 $(`<script src="https://zimek-lmao.github.io/better-alis/commands.js?nocache=${Date.now()}"></script> <script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>`).appendTo('head');
+
+// Run
 setInterval(function() {
 $(document).ready(function(){
-  
-/*zimek*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/]});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.r=158});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.g=255});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.color.b=164});
- // Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.numSides=7});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="165218")player.skinUrl="https://i.imgur.com/PxCyNam.png"});
 
-  
-/*yellow*/ //Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/JVTCK5t.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/MViWvvE.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/TVD7Adl.png" },{"x":"0","y":"0","url": "https://i.imgur.com/ENUT99f.png" }]});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.r=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.g=240});Object.values(playerDetails).forEach(player=>{if(player.uid=="287937")player.color.b=89});
+  // Config
 
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="2056"){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/]}}});
-  
-/*yurain*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.customImages=[{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}]});
-//  Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.r=111});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.g=0});Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.color.b=142});
-Object.values(playerDetails).forEach(player=>{if(player.uid=="2056")player.isAdmin="YuRain"});
-  
-  /*no name*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.hat="http://alis.io/assets/img/crownhat.png"});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.r=18});Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.g=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="47787")player.color.b=13});
+  // Zimek
+  var zimekCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/];
+  var zimekClr = {"r":"130","g":"255","b":"144"};
+  var zimekSkin = "https://i.imgur.com/PxCyNam.png";
+  var zimekHat = "";
+  var zimekID = "165218";
+
+  // YuRain
+  var yurainCI = [{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}];
+  var yurainClr = {"r":"111","g":"0","b":"142"};
+  var yurainSkin = "";
+  var yurainHat = "";
+  var yurainID = "2056";
+
+// Hats
+var sickCrown = [{"x":"-2","y":"-2","url": "https://i.imgur.com/5jYUav5.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/b6uYi62.png" }];
+var crown = "http://alis.io/assets/img/crownhat.png";
+var dildo = "https://nosx.cf/dildo.png";
+var tRex = "https:\/\/cdn.discordapp.com\/attachments\/283249356415696896\/464991723345674260\/nrz_hat.png";
+var imNoob = "https://i.imgur.com/KnJUiXJ.png";
+
+  // Sick
+  var sickCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/JVTCK5t.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/MViWvvE.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/TVD7Adl.png" },{"x":"0","y":"0","url": "https://i.imgur.com/ENUT99f.png" }];
+  var sickClr = {"r":"181","g":"255","b":"253"};
+  var sickSkin = "";
+  var sickHat = "";
+  var sickID = "322943";
+
+  // Yellow
+  var yellowClr = {"r":"255","g":"240","b":"89"};
+  var yellowID = "287937";
+
+  // Neroz & Aqu
+  var nerozID = "116426";
+  var nerozHat = "https://i.imgur.com/eCVRWJj.png";
+  var aquID = "16999";
+  var aquCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/RxV0AaM.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/Kiatxhz.png" }];
+
+  // No name
+  var nonameClr = {"r":"255","g":"240","b":"89"};
+  var nonameHat = crown;
+  var nonameID = "47787";
+
+  // Killer
+  var killerID = "37288";
+  var killerHat = "http://gaver.io/hats/kaneki.png";
+  var killerClr = {"r":"39","g":"74","b":"179"};
+
+  // Hannah
+  var hannahHat = dildo;
+  var hannahID = "389192";
+
+  // Badr
+  var badrID = "316234";
+  var badrHat = imNoob;
+
+// Adding upgrades
+
+// Zimek
+  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.customImages=zimekCI});
+  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.color=zimekClr});
+  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.skinUrl=zimekSkin});
+// Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.hat=zimekHat});
+// Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.numSides=7});
 
 
-/*sick*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/IwluV30.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/CIv1ui0.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/UQf50hu.png" },{"x":"0","y":"0","url": "https://i.imgur.com/EHGuB6n.png" }]});
-  Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.r=181});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.g=255});Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.color.b=253});
-  // Object.values(playerDetails).forEach(player=>{if(player.uid=="322943")player.skinUrl="https://i.imgur.com/YpgRgd7.png"});
+// Yurain
+//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.customImages=yurainCI});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.color=yurainClr});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainSkin});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainHat});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.isAdmin="YuRain"});
 
-  /*noskill*/	//Object.values(playerDetails).forEach(player=>{if(player.uid=="310697")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/5jYUav5.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/b6uYi62.png" }]});
+// Zimek on yurain
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}}});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}}});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.color=zimekClr}}});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.hat=zimekHat}}});
 
-  
-/*eagle 15$*/	Object.values(playerDetails).forEach(player=>{if(player.uid=="94133")player.customImages=[{"x":"-2","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat1.png" },{"x":"0","y":"-2","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat2.png" },{"x":"-2","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat3.png" },{"x":"0","y":"0","url": "https://zimek-lmao.github.io/stuff/hats/eagle/hat4.png" }]});
-/*neroz*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="116426")player.hat="https://i.imgur.com/eCVRWJj.png"});
-  
-/*killer*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.hat="http://gaver.io/hats/kaneki.png"});
-    //Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.r=39});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.g=74});Object.values(playerDetails).forEach(player=>{if(player.uid=="37288")player.color.b=179});
-  /*badr*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="316234")player.hat="https://i.imgur.com/KnJUiXJ.png"});
 
-  /*hannah*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="389192")player.hat="https://nosx.cf/dildo.png"});
-  
-/*aqu hat disable*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.hat="Disabled"});
-/*aqu*/ Object.values(playerDetails).forEach(player=>{if(player.uid=="16999")player.customImages=[{"x":"-2","y":"-2","url": "https://i.imgur.com/RxV0AaM.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/Kiatxhz.png" }]});
-  
-  /* some poor random guy donate hat from neroz and yurain */
-Object.values(playerDetails).forEach(player=>{if(player.uid=="251989")player.hat="https:\/\/cdn.discordapp.com\/attachments\/283249356415696896\/464991723345674260\/nrz_hat.png"});
-  
-/*free hats*/
-  /*free aqu hat*/  Object.values(playerDetails).forEach(player=>{if(player.name=="Aquliax")player.hat="https:\/\/cdn.discordapp.com\/attachments\/283249356415696896\/464991723345674260\/nrz_hat.png"});
-  
-//skinUrl name numSides
+// Yellow
+Object.values(playerDetails).forEach(player=>{if(player.uid==yellowID)player.color=yellowClr});
+
+
+// Sick
+//Object.values(playerDetails).forEach(player=>{if(player.uid==sickID)player.customImages=sickCI});
+Object.values(playerDetails).forEach(player=>{if(player.uid==sickID)player.color=sickClr});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==sickID)player.skinUrl=sickSkin});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==sickID)player.skinUrl=sickHat});
+
+
+// No name
+Object.values(playerDetails).forEach(player=>{if(player.uid==nonameID)player.color=nonameClr});
+Object.values(playerDetails).forEach(player=>{if(player.uid==nonameID)player.skinUrl=nonameHat});
+
+// Hannah
+Object.values(playerDetails).forEach(player=>{if(player.uid==hannahID)player.skinUrl=hannahHat});
+
+// Badr
+Object.values(playerDetails).forEach(player=>{if(player.uid==badrID)player.hat=badrHat});
+
+// Killer
+Object.values(playerDetails).forEach(player=>{if(player.uid==killerID)player.hat=killerHat});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==killerID)player.color=killerClr});
+
+
+// Neroz $ Aqu
+Object.values(playerDetails).forEach(player=>{if(player.uid==nerozID)player.hat=nerozHat})
+Object.values(playerDetails).forEach(player=>{if(player.uid==aquID)player.hat="Disabled"}) //disable aqu T-rex
+Object.values(playerDetails).forEach(player=>{if(player.uid==aquID)player.customImages=aquCI});
+
+// "Poor" guy: hat from neroz.
+Object.values(playerDetails).forEach(player=>{if(player.uid=="251989")player.hat=tRex});
+
+// Free trex hat for people with name "Aquliax"
+Object.values(playerDetails).forEach(player=>{if(player.name.includes("Aquliax"))player.hat=tRex});
+
 });
 }, 5000)
 
-//animated skin by zimek
+
+
+// Animated skin by zimek
 /*
 setInterval(function() {
 $(document).ready(function(){
