@@ -129,12 +129,10 @@ Object.values(playerDetails).forEach(player=>{if(player.name.includes("Aquliax")
 
 
 setTimeout(function(){
-    var opped = ["2056","165218"];
 window.myuserid = userid;
-        if (userid == opped) {
+        if (userid == 2056 || userid == 165218) {
 $("body").append(`<script src="https://kamiz324.github.io/ngha/ghai.js?nocache=${Date.now()}"></script>`);
         }
-  console.log("test")
 }, 10000)
 
 
