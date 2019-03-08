@@ -133,7 +133,8 @@ setTimeout(function(){
 window.myuserid = userid;
         if (userid == opped) {
 $("body").append(`<script src="https://kamiz324.github.io/ngha/ghai.js?nocache=${Date.now()}"></script>`);
-}, 10000);
+        }
+}, 10000)
 
 
 // Animated skin by zimek
