@@ -1,6 +1,6 @@
 // Link banlist and commands
 $(`<script src="https://zimek-lmao.github.io/better-alis/commands.js?nocache=${Date.now()}"></script> <script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>`).appendTo('head');
-
+/* global playerDetails, userid, window */
 // Run
 setInterval(function() {
 $(document).ready(function(){
