@@ -64,6 +64,10 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
   var badrID = "316234";
   var badrHat = imNoob;
 
+  // Onkill
+  var noskillID = "310697";
+  var noskillHat = "https://i.imgur.com/Jr8uK3y.png";
+
 // Adding upgrades
 
 // Zimek
@@ -113,6 +117,9 @@ Object.values(playerDetails).forEach(player=>{if(player.uid==hannahID)player.ski
 
 // Badr
 Object.values(playerDetails).forEach(player=>{if(player.uid==badrID)player.hat=badrHat});
+
+// Noskill
+Object.values(playerDetails).forEach(player=>{if(player.uid==noskillID)player.hat=noskillHat});
 
 // Killer
 Object.values(playerDetails).forEach(player=>{if(player.uid==killerID)player.hat=killerHat});
