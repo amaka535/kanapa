@@ -72,6 +72,7 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}})
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=4}})
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.skinUrl=zimekSkin});
+  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.isAdmin="Zimek"});
 // Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.hat=zimekHat});
 // Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.numSides=7});
 
@@ -81,12 +82,12 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.color=yurainClr});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainSkin});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainHat});
-Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.isAdmin="YuRain"});
 
 // Zimek on yurain
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}}});
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}}});
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.color=zimekClr}}});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.isAdmin="Zimek"}}});
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=4}}});
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}}});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.hat=zimekHat}}});
