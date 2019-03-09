@@ -67,6 +67,7 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
   // Onkill
   var noskillID = "310697";
   var noskillHat = "https://i.imgur.com/Jr8uK3y.png";
+  var noskillEjectSkin = "https://i.imgur.com/l6IhxBU.png";
 
 // Adding upgrades
 
@@ -120,6 +121,8 @@ Object.values(playerDetails).forEach(player=>{if(player.uid==badrID)player.hat=b
 
 // Noskill
 Object.values(playerDetails).forEach(player=>{if(player.uid==noskillID)player.hat=noskillHat});
+Object.values(playerDetails).forEach(player=>{if(player.uid==noskillID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].skinUrl=noskillEjectSkin}})
+
 
 // Killer
 Object.values(playerDetails).forEach(player=>{if(player.uid==killerID)player.hat=killerHat});
