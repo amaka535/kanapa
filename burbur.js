@@ -13,7 +13,7 @@ $(document).ready(function(){
   var zimekSkin = "https://i.imgur.com/PxCyNam.png";
   var zimekHat = "";
   var zimekID = "165218";
-  var zimekEjectClr = {"r":"109","g":"255","b":"216"};
+  var zimekEjectClr = {"r":"255","g":"173","b":"244"};
 
   // YuRain
   var yurainCI = [{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}];
