@@ -69,7 +69,6 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 // Zimek
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.customImages=zimekCI});
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.color=zimekClr});
-  Object.values(playerDetails).forEach(player=>{if(player.pid==zimekID)player.color=zimekClr});
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}})
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=4}})
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.skinUrl=zimekSkin});
@@ -83,6 +82,15 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainSkin});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainHat});
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.isAdmin="YuRain"});
+
+// Zimek on yurain
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}}});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}}});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.color=zimekClr}}});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=4}}});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}}});
+//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.hat=zimekHat}}});
+
 
 // Yellow
 Object.values(playerDetails).forEach(player=>{if(player.uid==yellowID)player.color=yellowClr});
@@ -119,7 +127,7 @@ Object.values(playerDetails).forEach(player=>{if(player.uid==aquID)player.custom
 Object.values(playerDetails).forEach(player=>{if(player.uid=="251989")player.hat=tRex});
 
 // Free trex hat for people with name "Aquliax"
-Object.values(playerDetails).forEach(player=>{if(player.name.includes("Aquliax"))player.hat=tRex});
+Object.values(playerDetails).forEach(player=>{if(player.name=="Aquliax")player.hat=tRex});
 
 });
 }, 5000)
