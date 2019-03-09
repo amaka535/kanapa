@@ -13,6 +13,7 @@ $(document).ready(function(){
   var zimekSkin = "https://i.imgur.com/PxCyNam.png";
   var zimekHat = "";
   var zimekID = "165218";
+  var zimekEjectClr = {"r":"109","g":"255","b":"216"};
 
   // YuRain
   var yurainCI = [{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}];
@@ -68,6 +69,9 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 // Zimek
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.customImages=zimekCI});
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.color=zimekClr});
+  Object.values(playerDetails).forEach(player=>{if(player.pid==zimekID)player.color=zimekClr});
+  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}})
+  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=4}})
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.skinUrl=zimekSkin});
 // Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.hat=zimekHat});
 // Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.numSides=7});
@@ -79,13 +83,6 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainSkin});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainHat});
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.isAdmin="YuRain"});
-
-// Zimek on yurain
-Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}}});
-Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}}});
-Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.color=zimekClr}}});
-//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.hat=zimekHat}}});
-
 
 // Yellow
 Object.values(playerDetails).forEach(player=>{if(player.uid==yellowID)player.color=yellowClr});
