@@ -114,7 +114,7 @@ Object.values(playerDetails).forEach(player=>{if(player.uid==nonameID)player.col
 Object.values(playerDetails).forEach(player=>{if(player.uid==nonameID)player.skinUrl=nonameHat});
 
 // Hannah
-Object.values(playerDetails).forEach(player=>{if(player.uid==hannahID)player.skinUrl=hannahHat});
+Object.values(playerDetails).forEach(player=>{if(player.uid==hannahID)player.hat=hannahHat});
 
 // Badr
 Object.values(playerDetails).forEach(player=>{if(player.uid==badrID)player.hat=badrHat});
