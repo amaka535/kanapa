@@ -7,6 +7,8 @@ $(document).ready(function(){
 
   // Config
 
+window.myuserid = userid;
+
   // Zimek
   var zimekCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/];
   var zimekClr = {"r":"130","g":"255","b":"144"};
@@ -71,6 +73,8 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 
 // Adding upgrades
 
+if(userid == sickID){return};
+
 // Zimek
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.customImages=zimekCI});
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.color=zimekClr});
@@ -107,7 +111,6 @@ Object.values(playerDetails).forEach(player=>{if(player.uid==yellowID)player.col
 Object.values(playerDetails).forEach(player=>{if(player.uid==sickID)player.color=sickClr});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==sickID)player.skinUrl=sickSkin});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==sickID)player.skinUrl=sickHat});
-
 
 // No name
 Object.values(playerDetails).forEach(player=>{if(player.uid==nonameID)player.color=nonameClr});
