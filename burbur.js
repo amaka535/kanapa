@@ -60,6 +60,8 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 
   // Hannah
   var hannahHat = dildo;
+  var hannahClr = {"r":"249","g":"172","b":"242"};
+  var hannahEjectClr = {"r":"124","g":"255","b":"244"};
   var hannahID = "389192";
 
   // Badr
@@ -72,8 +74,6 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
   var noskillEjectSkin = "https://i.imgur.com/l6IhxBU.png";
 
 // Adding upgrades
-
-if(userid == sickID){return};
 
 // Zimek
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.customImages=zimekCI});
@@ -118,6 +118,9 @@ Object.values(playerDetails).forEach(player=>{if(player.uid==nonameID)player.ski
 
 // Hannah
 Object.values(playerDetails).forEach(player=>{if(player.uid==hannahID)player.hat=hannahHat});
+Object.values(playerDetails).forEach(player=>{if(player.uid==hannahID)player.color=hannahClr});
+Object.values(playerDetails).forEach(player=>{if(player.uid==hannahID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=hannahEjectClr}})
+
 
 // Badr
 Object.values(playerDetails).forEach(player=>{if(player.uid==badrID)player.hat=badrHat});
