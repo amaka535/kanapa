@@ -33,7 +33,7 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 
   // Sick
   var sickCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/JVTCK5t.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/MViWvvE.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/TVD7Adl.png" },{"x":"0","y":"0","url": "https://i.imgur.com/ENUT99f.png" }];
-  var sickClr = {"r":"181","g":"255","b":"253"};
+  var sickClr = {"r":"0","g":"102","b":"102"};
   var sickSkin = "";
   var sickHat = "";
   var sickID = "322943";
