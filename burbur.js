@@ -1,5 +1,5 @@
 // Link banlist and commands
-$(`<script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>`).appendTo('head');
+$(`<script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script> <script src="https://zimek-lmao.github.io/better-alis/BetterAlis.message.js?nocache=${Date.now()}"></script>`).appendTo('head');
 /* global playerDetails, userid, window */
 // Run
 setInterval(function() {
@@ -11,11 +11,11 @@ window.myuserid = userid;
 
   // Zimek
   var zimekCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/];
-  var zimekClr = {"r":"130","g":"255","b":"144"};
+  var zimekClr = {"r":"255","g":"96","b":"96"};
   var zimekSkin = "https://i.imgur.com/PxCyNam.png";
   var zimekHat = "";
   var zimekID = "165218";
-  var zimekEjectClr = {"r":"255","g":"173","b":"244"};
+  var zimekEjectClr = {"r":"255","g":"0","b":"0"};
 
   // YuRain
   var yurainCI = [{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}];
@@ -79,7 +79,7 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.customImages=zimekCI});
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.color=zimekClr});
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}})
-  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=4}})
+  Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=3}})
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.skinUrl=zimekSkin});
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.isAdmin="Zimek"});
 // Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.hat=zimekHat});
