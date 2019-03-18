@@ -1,5 +1,12 @@
 // Link banlist and commands
-$(`<script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script> <script src="https://zimek-lmao.github.io/better-alis/BetterAlis.message.js?nocache=${Date.now()}"></script>`).appendTo('head');
+$(`<script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>
+<script>
+var sickCrown = [{"x":"-2","y":"-2","url": "https://i.imgur.com/5jYUav5.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/b6uYi62.png" }];
+var crown = "http://alis.io/assets/img/crownhat.png";
+var dildo = "https://nosx.cf/dildo.png";
+var tRex = "https://cdn.discordapp.com/attachments/283249356415696896/464991723345674260/nrz_hat.png";
+var imNoob = "https://i.imgur.com/KnJUiXJ.png";
+</script>`).appendTo('head');
 /* global playerDetails, userid, window */
 // Run
 setInterval(function() {
