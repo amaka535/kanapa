@@ -94,8 +94,8 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
 
 
 // Yurain
-//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.customImages=yurainCI});
-//Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.color=yurainClr});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.customImages=yurainCI});
+Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.color=yurainClr});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainSkin});
 //Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.skinUrl=yurainHat});
 
