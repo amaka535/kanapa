@@ -26,7 +26,7 @@ window.myuserid = userid;
 
   // YuRain
   var yurainCI = [{"x":-2,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topleft.png"},{"x":0,"y":-2,"url":"https:\/\/nosx.cf\/skin\/topright.png"},{"x":-2,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomleft.png"},{"x":0,"y":0,"url":"https:\/\/nosx.cf\/skin\/bottomright.png"}];
-  var yurainClr = {"r":"111","g":"0","b":"142"};
+  var yurainClr = {"r":"0","g":"109","b":"16"};
   var yurainSkin = "";
   var yurainHat = "";
   var yurainID = "2056";
