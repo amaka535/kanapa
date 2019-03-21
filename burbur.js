@@ -52,8 +52,8 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
   // Neroz & Aqu
   var nerozID = "116426";
   var nerozHat = "https://i.imgur.com/eCVRWJj.png";
-  var aquID = "16999";
-  var aquCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/RxV0AaM.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/Kiatxhz.png" }];
+  var aquID = "413198";
+  var aquCI = [{"x":"-1","y":"-1.9","url": "https://i.imgur.com/JyvWlWZ.png" }];
 
   // No name
   var nonameClr = {"r":"255","g":"240","b":"89"};
@@ -91,7 +91,6 @@ var imNoob = "https://i.imgur.com/KnJUiXJ.png";
   Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.isAdmin="Zimek"});
 // Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.hat=zimekHat});
 // Object.values(playerDetails).forEach(player=>{if(player.uid==zimekID)player.numSides=7});
-
 
 // Yurain
 Object.values(playerDetails).forEach(player=>{if(player.uid==yurainID)player.customImages=yurainCI});
