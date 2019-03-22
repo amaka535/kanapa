@@ -1,5 +1,5 @@
 // Link banlist and commands
-$(`<script src="https://zimek-lmao.github.io/better-alis/BetterAlis.banlist.js?nocache=${Date.now()}"></script>
+$(`
 <script>
 var sickCrown = [{"x":"-2","y":"-2","url": "https://i.imgur.com/5jYUav5.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/b6uYi62.png" }];
 var crown = "http://alis.io/assets/img/crownhat.png";
@@ -17,9 +17,9 @@ $(document).ready(function(){
 window.myuserid = userid;
 
   // Zimek
-  var zimekCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/rpgzIVz.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/AbOQ6N7.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" }/*,{"x":"0","y":"0","url": "https://i.imgur.com/cBR2cul.png" }*/];
+  var zimekCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/SPeixJv.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/WvELX77.png" },/*{"x":"-2","y":"0","url": "https://i.imgur.com/wunPx2d.png" },*/{"x":"0","y":"0","url": "https://i.imgur.com/EkNOhNI.png" }];
   var zimekClr = {"r":"255","g":"96","b":"96"};
-  var zimekSkin = "https://i.imgur.com/PxCyNam.png";
+  var zimekSkin = "https://i.imgur.com/VRnvWbI.png";
   var zimekHat = "";
   var zimekID = "165218";
   var zimekEjectClr = {"r":"255","g":"0","b":"0"};
