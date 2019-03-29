@@ -94,11 +94,11 @@ if(isJoinedGame || spectateMode){
   Object.values(playerDetails).forEach(player=>{
 
     // Zimek
-    if(player.uid==zimekID)player.customImages=zimekCI;
+//    if(player.uid==zimekID)player.customImages=zimekCI;
+//  if(player.uid==zimekID)player.skinUrl=zimekSkin;
   if(player.uid==zimekID)player.color=zimekClr;
   if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}
   if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=3}
-  if(player.uid==zimekID)player.skinUrl=zimekSkin;
   if(player.uid==zimekID)player.isAdmin="Zimek"; //so on any tag people can see my skin
 // if(player.uid==zimekID)player.hat=zimekHat;
 
@@ -109,8 +109,8 @@ if(player.uid==yurainID)player.color=yurainClr;
 //if(player.uid==yurainID)player.skinUrl=yurainHat;
 
 // Zimek on yurain acc
-if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}};
-if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}};
+//if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}};
+//if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}};
 if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.color=zimekClr}};
 if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.isAdmin="Zimek"}}; //so peps see my skin on any tag
 if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=3}};
@@ -162,3 +162,23 @@ window.myuserid = userid;
 console.log("you are special")
         }
 }, 13000)
+
+//Animated skin by Zimek
+//Config
+
+var userUID = 165218
+var speed = 100
+var frames = 5
+var url1 = "https://zimek-lmao.github.io/zimek/askin2/"
+var url2 = ".gif"
+var count = 1
+
+//run
+setInterval(function(){
+    if(count > frames){count=1}
+    var url = `${url1}${count}${url2}`
+Object.values(playerDetails).forEach(player=>{
+if(player.uid==userUID)player.skinUrl=url
+});
+count = count + 1;
+}, speed)
