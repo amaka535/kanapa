@@ -94,7 +94,7 @@ if(isJoinedGame || spectateMode){
   Object.values(playerDetails).forEach(player=>{
 
     // Zimek
-//    if(player.uid==zimekID)player.customImages=zimekCI;
+    if(player.uid==zimekID)player.customImages=sickCrown; //zimekCI
 //  if(player.uid==zimekID)player.skinUrl=zimekSkin;
   if(player.uid==zimekID)player.color=zimekClr;
   if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}
