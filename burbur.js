@@ -73,6 +73,8 @@ var killerClr = {"r":"39","g":"74","b":"179"};
 
 // Hannah
 var hannahHat = dildo;
+var hannahCI = [{"x":"-2","y":"-2","url": "https://i.imgur.com/ZOiqaPE.png" },{"x":"0","y":"-2","url": "https://i.imgur.com/S7f2Fui.png" },{"x":"-2","y":"0","url": "https://i.imgur.com/nTMj0UP.png" },{"x":"0","y":"0","url": "https://i.imgur.com/r7qLTzA.png" }];
+var hannahSkin = "https://i.imgur.com/cfNycmQ.png"
 var hannahClr = {"r":"249","g":"172","b":"242"};
 var hannahEjectClr = {"r":"124","g":"255","b":"244"};
 var hannahID = "389192";
@@ -106,7 +108,7 @@ if(isJoinedGame || spectateMode){
 //if(player.uid==yurainID)player.customImages=yurainCI;
 if(player.uid==yurainID)player.color=yurainClr;
 //if(player.uid==yurainID)player.skinUrl=yurainSkin;
-//if(player.uid==yurainID)player.skinUrl=yurainHat;
+//if(player.uid==yurainID)player.hat=yurainHat;
 
 // Zimek on yurain acc
 //if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}};
@@ -125,10 +127,12 @@ if(player.uid==sickID)player.color=sickClr; //you too ^
 
 // No name
 if(player.uid==nonameID)player.color=nonameClr;
-if(player.uid==nonameID)player.skinUrl=nonameHat;
+if(player.uid==nonameID)player.hat=nonameHat;
 
 // Hannah
-if(player.uid==hannahID)player.hat=hannahHat;
+if(player.uid==hannahID)player.customImages=hannahCI;
+if(player.uid==hannahID)player.skinUrl=hannahSkin;
+//if(player.uid==hannahID)player.hat=hannahHat;
 if(player.uid==hannahID)player.color=hannahClr;
 if(player.uid==hannahID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=hannahEjectClr}
 
