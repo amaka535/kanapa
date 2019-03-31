@@ -89,73 +89,76 @@ var noskillHat = "https://i.imgur.com/Jr8uK3y.png";
 var noskillEjectSkin = "https://i.imgur.com/l6IhxBU.png";
 
 // Run
+function upgradeBta() {
+    Object.values(playerDetails).forEach(player=>{
+
+      // Zimek
+      if(player.uid==zimekID)player.customImages=sickCrown; //zimekCI
+  //  if(player.uid==zimekID)player.skinUrl=zimekSkin;
+    if(player.uid==zimekID)player.color=zimekClr;
+    if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}
+    if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=3}
+    if(player.uid==zimekID)player.isAdmin="Zimek"; //so on any tag people can see my skin
+  // if(player.uid==zimekID)player.hat=zimekHat;
+
+  // Yurain
+  //if(player.uid==yurainID)player.customImages=yurainCI;
+  if(player.uid==yurainID)player.color=yurainClr;
+  //if(player.uid==yurainID)player.skinUrl=yurainSkin;
+  //if(player.uid==yurainID)player.hat=yurainHat;
+
+  // Zimek on yurain acc
+  //if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}};
+  //if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}};
+  if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.color=zimekClr}};
+  if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.isAdmin="Zimek"}}; //so peps see my skin on any tag
+  if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=3}};
+  if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}};
+  //if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.hat=zimekHat}};
+
+  // Yellow
+  if(player.uid==yellowID)player.color=yellowClr; //gay cant be anonymous
+
+  // Sick
+  if(player.uid==sickID)player.color=sickClr; //you too ^
+
+  // No name
+  if(player.uid==nonameID)player.color=nonameClr;
+  if(player.uid==nonameID)player.hat=nonameHat;
+
+  // Hannah
+  if(player.uid==hannahID)player.customImages=hannahCI;
+  if(player.uid==hannahID)player.skinUrl=hannahSkin;
+  //if(player.uid==hannahID)player.hat=hannahHat;
+  if(player.uid==hannahID)player.color=hannahClr;
+  if(player.uid==hannahID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=hannahEjectClr}
+
+
+  // Badr
+  if(player.uid==badrID)player.hat=badrHat;
+
+  // Noskill
+  if(player.uid==noskillID)player.hat=noskillHat;
+  if(player.uid==noskillID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].skinUrl=noskillEjectSkin}
+
+
+  // Killer
+  if(player.uid==killerID)player.hat=killerHat;
+  //if(player.uid==killerID)player.color=killerClr;
+
+  // Rinsen / neroz
+  if(player.uid==nerozID)player.hat=nerozHat
+
+  // "Poor" guy: hat from neroz.
+  if(player.uid=="251989")player.hat=tRex;
+
+  });
+}
+
+//Running
 setInterval(function() {
 $(document).ready(function(){
-// Adding upgrades
-if(isJoinedGame || spectateMode){
-  Object.values(playerDetails).forEach(player=>{
-
-    // Zimek
-    if(player.uid==zimekID)player.customImages=sickCrown; //zimekCI
-//  if(player.uid==zimekID)player.skinUrl=zimekSkin;
-  if(player.uid==zimekID)player.color=zimekClr;
-  if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}
-  if(player.uid==zimekID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=3}
-  if(player.uid==zimekID)player.isAdmin="Zimek"; //so on any tag people can see my skin
-// if(player.uid==zimekID)player.hat=zimekHat;
-
-// Yurain
-//if(player.uid==yurainID)player.customImages=yurainCI;
-if(player.uid==yurainID)player.color=yurainClr;
-//if(player.uid==yurainID)player.skinUrl=yurainSkin;
-//if(player.uid==yurainID)player.hat=yurainHat;
-
-// Zimek on yurain acc
-//if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.customImages=zimekCI}};
-//if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.skinUrl=zimekSkin}};
-if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.color=zimekClr}};
-if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.isAdmin="Zimek"}}; //so peps see my skin on any tag
-if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].numSides=3}};
-if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=zimekEjectClr}};
-//if(player.uid==yurainID){if(player.name.includes("Zimek") || player.name.includes("zimek")){player.hat=zimekHat}};
-
-// Yellow
-if(player.uid==yellowID)player.color=yellowClr; //gay cant be anonymous
-
-// Sick
-if(player.uid==sickID)player.color=sickClr; //you too ^
-
-// No name
-if(player.uid==nonameID)player.color=nonameClr;
-if(player.uid==nonameID)player.hat=nonameHat;
-
-// Hannah
-if(player.uid==hannahID)player.customImages=hannahCI;
-if(player.uid==hannahID)player.skinUrl=hannahSkin;
-//if(player.uid==hannahID)player.hat=hannahHat;
-if(player.uid==hannahID)player.color=hannahClr;
-if(player.uid==hannahID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].color=hannahEjectClr}
-
-
-// Badr
-if(player.uid==badrID)player.hat=badrHat;
-
-// Noskill
-if(player.uid==noskillID)player.hat=noskillHat;
-if(player.uid==noskillID){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].skinUrl=noskillEjectSkin}
-
-
-// Killer
-if(player.uid==killerID)player.hat=killerHat;
-//if(player.uid==killerID)player.color=killerClr;
-
-// Rinsen / neroz
-if(player.uid==nerozID)player.hat=nerozHat
-
-// "Poor" guy: hat from neroz.
-if(player.uid=="251989")player.hat=tRex;
-
-}); }
+if(isJoinedGame || spectateMode){upgradeBta()}
 })
 }, 4500);
 
@@ -171,9 +174,9 @@ console.log("you are special")
 //Config
 
 var userUID = 165218
-var speed = 100
+var speed = 80
 var frames = 5
-var url1 = "https://zimek-lmao.github.io/zimek/askin2/"
+var url1 = "https://zimek.tk/askin2/"
 var url2 = ".gif"
 var count = 1
 
