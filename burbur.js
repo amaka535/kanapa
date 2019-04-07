@@ -36,6 +36,10 @@ if(user.customImages){
   if(player.uid == user.uid)player.customImages=user.customImages;
 }
 
+if(user.customImg){
+  if(player.uid == user.uid)player.customImages=[{"x":-2,"y":-2,"url":user.customImg[0]},{"x":0,"y":-2,"url":user.customImg[1]},{"x":-2,"y":0,"url":user.customImg[2]},{"x":0,"y":0,"url":user.customImg[3]}];
+}
+
 if(user.hat){
   if(player.uid == user.uid)player.hat=user.hat;
 }
