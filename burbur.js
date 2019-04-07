@@ -74,22 +74,15 @@ if(isJoinedGame || spectateMode){upgradeBta()}
 }, 4500);
 
 
-setTimeout(function(){
-window.myuserid = userid;
-        if (userid == 2056 || userid == 165218) {
-console.log("you are special")
-        }
-}, 13000)
-
 //Animated skin by Zimek
-//Config
-
+/*
 var userUID = 165218
 var speed = 80
 var frames = 5
 var url1 = "https://zimek.tk/askin2/"
 var url2 = ".gif"
 var count = 1
+
 
 //run
 setInterval(function(){
@@ -100,3 +93,4 @@ if(player.uid==userUID)player.skinUrl=url
 });
 count = count + 1;
 }, speed)
+*/
