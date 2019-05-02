@@ -46,7 +46,7 @@ if(user.hat){
 if(user.forceSkin){
   if(player.uid == user.uid)player.skinUrl=user.forceSkin;
 } else {
-   if(hideOwnSkinTrue == true){if(player.uid==userid)player.skinUrl=""})
+   if(hideOwnSkinTrue == true){if(player.uid==userid)player.skinUrl=""}
 }
 
 if(user.cellColor){
