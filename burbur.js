@@ -22,16 +22,10 @@ var fancy = "http://gaver.io/hats/fancy.png";
 var trolCrown = "http://gaver.io/hats/troll.png";
 var xaz = "http://gaver.io/hats/xaz.png";
 
-const btaHideOwnSkin = document.getElementById('btaHideOwnSkin');
-
-if(btaHideOwnSkin.checked){hideOwnSkinTrue = true}else{hideOwnSkinTrue = false}
-
 // Run
 function upgradeBta() {
   Object.values(users).forEach(user=>{
     Object.values(playerDetails).forEach(player=>{
-
-if(hideOwnSkinTrue == true){Object.values(playerDetails).forEach(player=>{if(player.uid==userid)player.skinUrl=""})
 
 if(user.showSkinForEveryone){
   if(player.uid == user.uid)player.isAdmin=true;
