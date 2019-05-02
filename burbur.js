@@ -22,7 +22,6 @@ var fancy = "http://gaver.io/hats/fancy.png";
 var trolCrown = "http://gaver.io/hats/troll.png";
 var xaz = "http://gaver.io/hats/xaz.png";
 
-var hideOwnSkinTrue
 const btaHideOwnSkin = document.getElementById('btaHideOwnSkin');
 
 if(btaHideOwnSkin.checked){hideOwnSkinTrue = true}else{hideOwnSkinTrue = false}
