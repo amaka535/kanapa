@@ -45,6 +45,8 @@ if(user.hat){
 
 if(user.forceSkin){
   if(player.uid == user.uid)player.skinUrl=user.forceSkin;
+} else {
+   if(hideOwnSkinTrue == true){if(player.uid==userid)player.skinUrl=""})
 }
 
 if(user.cellColor){
@@ -74,7 +76,7 @@ setInterval(function() {
 $(document).ready(function(){
 if(isJoinedGame || spectateMode){upgradeBta()}
 })
-}, 4500);
+}, 5000);
 
 
 //Animated skin by Zimek
