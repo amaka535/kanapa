@@ -49,10 +49,6 @@ if(user.forceSkin){
    if(hideOwnSkinTrue == true){if(player.uid==userid)player.skinUrl=""}
 }
 
-if(user.cellColor){
-  if(player.uid == user.uid)player.color=user.cellColor;
-}
-
 if(user.ejectMass){
 
 if(user.ejectMass.color){
@@ -67,6 +63,21 @@ if(user.ejectMass.skin){
   if(player.uid == user.uid){var ejectPid=player.pid-player.pid-player.pid; window.playerDetails[ejectPid].skinUrl=user.ejectMass.skin}
 }
 }
+
+if(user.cellColor){
+  if(player.uid==userid){
+    if(btaCCcell.checked){
+if(btacc==="nan")ccRGB(btaCellColor.value);
+      player.color=btacc;
+    } else {
+      if(player.uid == user.uid)player.color=user.cellColor;
+    }
+  } else {
+  if(player.uid == user.uid)player.color=user.cellColor;
+}
+}
+
+
   });
   });
 }
