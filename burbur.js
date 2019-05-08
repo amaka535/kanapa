@@ -66,6 +66,8 @@ if(user.ejectMass.skin){
 
 if(btaPskin.checked){
   if(player.uid == userid)player.skinUrl=btaPrivSkin.value;
+} else {
+  if(player.uid == userid)player.skinUrl=$("#skinurl").val();
 }
 
 if(user.cellColor){
