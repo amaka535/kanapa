@@ -64,6 +64,10 @@ if(user.ejectMass.skin){
 }
 }
 
+if(btaPskin.checked){
+  if(player.uid == userid)player.skinUrl=btaPrivSkin.value;
+}
+
 if(user.cellColor){
   if(player.uid==userid){
     if(btaCCcell.checked){
